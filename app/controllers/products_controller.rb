@@ -6,7 +6,7 @@ class ProductsController < ApplicationController
 
   private
 
-  def search_params
+  def product_params
   	params.require(:product).permit(:name, :category, :price)
   end	
 end
